@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Route, Routes, Link } from 'react-router-dom'
 import Display from './Display';
 
 export default function Test () {
@@ -48,8 +49,11 @@ export default function Test () {
 
     return (
         <>
-        <h2> hello again</h2>
-            <Display questions = { data }/>
+        <h2> Welcome </h2>
+          <Link to="/start"><button> start </button></Link>
+          <Routes>
+            <Route path='/start' element={<Display questions = { data }/> } /> 
+          </Routes>
             
            
         </>
