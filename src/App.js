@@ -1,11 +1,13 @@
 
 import './App.css';
-// import { useState, useEffect } from 'react';
+import Test from './Test.js'
 
 function App() {
+
   return (
   <div>
     <h1>hello</h1>
+    <Test />
   </div>
   );
 }
