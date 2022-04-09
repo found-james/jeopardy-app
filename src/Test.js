@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Display from './Display';
 
 export default function Test () {
     const [data, setData] = useState([]);
@@ -48,7 +49,7 @@ export default function Test () {
     return (
         <>
         <h2> hello again</h2>
-            <button  value="start"> start </button>
+            <Display questions = { data }/>
             
            
         </>
