@@ -20,10 +20,12 @@ export default function Display ({ questions }) {
             case "increase": 
                 setScore(score + question.value);
                 setAnswer(!answer);
+                setQuestion(local[Math.floor(Math.random()*local.length)]);
                 break;
             case "decrease": 
                 setScore(score - question.value);
                 setAnswer(!answer);
+                setQuestion(local[Math.floor(Math.random()*local.length)]);
                 break;
             case "new": 
                 setQuestion(local[Math.floor(Math.random()*local.length)]);
@@ -57,5 +59,5 @@ export default function Display ({ questions }) {
                                     : null
                         }
                         </>
-                        ): <h1> shit has failed</h1>
+                        ): <h1> shf has failed</h1>
 }

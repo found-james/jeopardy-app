@@ -4,11 +4,7 @@ import Display from './Display';
 
 export default function Test () {
     const [data, setData] = useState([]);
-    // const [text, setText] = useState(false);
-    // const [answer, setAnswer] = useState(false);
-    // const [score, setScore] =useState(0);
-    // const [copyQuestion, setCopyQuestion] = useState[{}];
-    
+
     const getData = async () => {
       try {
         const res = await fetch ("https://jservice.io/api/random?count=10")
@@ -23,29 +19,6 @@ export default function Test () {
     useEffect (() => {
         getData ();
     }, [])
-
-    // const handleClick = (e) =>{
-
-    //     switch (e.target.value){
-    //         case "start":
-    //             setText(!text);
-    //             // copyData();
-    //             if (answer) setAnswer(!answer);
-    //             break;
-    //         case "reveal":
-    //             setAnswer(!answer);
-    //             break;
-    //         case "correct":
-    //             setScore(score + data[Math.floor(Math.random() * 10)].value);
-    //             break; 
-    //         default: console.log("default");
-    //     }
-    // }
-    
-
-    // const copyData = () => {
-    //      console.log(setCopyQuestion(data[Math.floor(Math.random() * 10)].value));
-    // }
 
     return (
         <>
